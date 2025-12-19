@@ -52,3 +52,8 @@ async def root():
         
         """,
     }
+
+# 파이썬 배포 헬스체크
+@app.get("/healthz")
+async def healthz():
+    return {"status": "ok"}
