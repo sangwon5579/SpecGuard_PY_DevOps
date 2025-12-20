@@ -1,5 +1,5 @@
 # app/routes/resume.py
-from google import genai
+from google.genai import genai
 from dotenv import load_dotenv
 import os
 load_dotenv()
