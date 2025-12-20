@@ -6,26 +6,25 @@ authors = [
     {name = "viroovr",email = "tjgusdnjs789@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13,<4.0"
+requires-python = ">=3.11,<3.13"
 dependencies = [
-    "fastapi (>=0.116.1,<0.117.0)",
-    "uvicorn (>=0.35.0,<0.36.0)",
-    "httpx (>=0.28.1,<0.29.0)",
-    "playwright (>=1.54.0,<2.0.0)",
-    "python-dotenv (>=1.1.1,<2.0.0)",
+    "fastapi>=0.116,<0.117",
+    "uvicorn>=0.35,<0.36",
+    "httpx>=0.28,<0.29",
+    "playwright>=1.54,<2.0",
+    "python-dotenv>=1.1,<2.0",
 
-    "SQLAlchemy>=2.0,<3.0",
-    "asyncmy>=0.2.10,<0.3.0",
-    "tzdata (>=2025.2,<2026.0)",
-    "uvicorn (>=0.35.0,<0.36.0)",
-    "python-dotenv (>=1.1.1,<2.0.0)",
-    "requests (>=2.32.5,<3.0.0)",
-    "google-genai (>=1.38.0,<2.0.0)",
-    "pydantic (>=2.11)",
-    "pydantic-settings (>=2.10)",
-    "sqlalchemy (>=2.0.43,<3.0.0)",
-    "pymysql (>=1.1.2,<2.0.0)",
-    "aiomysql (>=0.2.0,<0.3.0)"
+    "sqlalchemy>=2.0,<3.0",
+    "pymysql>=1.1,<2.0",
+    "aiomysql>=0.2,<0.3",
+    "asyncmy>=0.2,<0.3",
+
+    "requests>=2.32,<3.0",
+    "pydantic>=2.11",
+    "pydantic-settings>=2.10",
+    "google-genai>=1.38,<2.0",
+
+    "tzdata>=2025.2,<2026.0"
 ]
 
 [tool.poetry]
@@ -43,7 +42,7 @@ build-backend = "poetry.core.masonry.api"
 # 아래 섹션은 black의 설정
 [tool.black]
 line-length = 88
-target-version = ['py313']
+target-version = ['py311']
 include = '\.pyi?$'
 exclude = '''
 /(
